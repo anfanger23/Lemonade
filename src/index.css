@@ -1,0 +1,70 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.lemon-stand {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #464646;
+  border-radius: 10px;
+  color: #ffd700;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.profit {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.sell-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.sell-button:hover {
+  background-color: #388e3c;
+}
+
+.buy-button {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.buy-button:hover {
+  background-color: #b71c1c;
+}
