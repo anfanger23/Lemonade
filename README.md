@@ -12,7 +12,7 @@ A simple interactive lemonade stand simulation built with React and useState. Tr
 
 1️⃣ Clone the repository
 
-git clone https://github.com/your-username/lemonade-stand.git
+git clone https://github.com/anfanger23/lemonade.git
 cd lemonade-stand
 
 2️⃣ Install dependencies
