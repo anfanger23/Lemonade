@@ -10,27 +10,66 @@
 body {
   margin: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   min-height: 100vh;
 }
 
-.lemon-stand {
+.navbar {
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+.main-content {
+  margin-top: 60px; /* Add margin to avoid overlap with navbar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.fruit-stand, .cart {
   text-align: center;
   padding: 20px;
   border: 2px solid #464646;
   border-radius: 10px;
-  color: #ffd700;
+  color: #cfcfcf;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #333;
 }
 
 .title {
   font-size: 2.5em;
   font-weight: bold;
-  color: #ffcc00;
+  color: #dbdbdb;
 }
 
 .profit {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.expense {
   font-size: 1.5em;
   margin: 10px 0;
 }
@@ -51,20 +90,38 @@ button {
   transition: background-color 0.3s ease-in-out;
 }
 
-.sell-button {
-  background-color: #4caf50;
-  color: white;
-}
-
-.sell-button:hover {
-  background-color: #388e3c;
-}
-
 .buy-button {
-  background-color: #d32f2f;
+  background-color: #6a6a6a;
   color: white;
+  margin-top: 1rem;
+  font-size: medium;
 }
 
 .buy-button:hover {
-  background-color: #b71c1c;
+  background-color: #2c2c2c;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+}
+
+.remove-button {
+  background-color: #662020;
+  color: white;
+  border: none;
+  padding: 2px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.remove-button:hover {
+  background-color: #951010;
+}
+
+.cart{
+  font-size: larger;
+  text-align: left;
 }

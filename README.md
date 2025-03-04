@@ -21,7 +21,7 @@ npm install
 
 3️⃣ Run the app
 
-npm start
+npm run dev
 
 The app should now be running on http://localhost:3000/.
 
